@@ -33,6 +33,3 @@ export default class Weather {
       });
   }
 }
-
-const App = new Weather();
-App.getCoordinates()
