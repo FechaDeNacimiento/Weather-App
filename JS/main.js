@@ -8,4 +8,4 @@ window.addEventListener('load', async ()=>{
     //Make use of App.LocalResponse here
   }, 5000)
   
-});
+})
