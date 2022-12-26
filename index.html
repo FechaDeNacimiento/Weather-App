@@ -6,20 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="./css/App.css" />
+    <link rel="stylesheet" href="./css/Top.css" />
+    <link rel="stylesheet" href="./css/Mid.css" />
     <script type="module" src="./JS/main.js" defer></script>
   </head>
 
   <body>
     <div id="container">
       <div id="Top">
-        <div id="menu-icon-div">
-          <img src="" alt="" id="menu-icon" />
+        <div id="top-main">
+          <div id="menu-icon-div">
+            <img src="" alt="" id="menu-icon" />
+          </div>
+          <h1 id="city"></h1>
+          <div id="plus-icon-div">
+            <img src="" alt="" id="plus-icon" />
+          </div>
         </div>
-        <h1 id="city"></h1>
-        <div id="plus-icon-div">
-          <img src="" alt="" id="plus-icon" />
+
+        <div id="Top-time">
+          <p id="time">Sat, 1:40 pm</p>
         </div>
-        <p id="time">Sat, 1:40 pm</p>
+      </div>
+
+      <div id="Mid">
+        <div id="Status"></div>
+        <div id="Temp">
+        </div>
+        <div id="Temp-details">
+          <div id="min-temp"></div>
+          <div style="width: 35px; height: 1px; background-color: #FFFFFF; margin-top: 3px; margin-bottom: 3px;">
+
+          </div>
+          <div id="max-temp"></div>
+        </div>
       </div>
     </div>
   </body>
