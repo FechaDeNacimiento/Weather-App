@@ -1,0 +1,19 @@
+
+#Mid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    justify-self: center;
+}
+
+#status{
+    grid-area:  1 / 1 / 2 / 2;
+}
+
+#temp{
+    grid-area:  2 / 1 / 3 / 2;
+}
+
+#min-max-temp{
+    grid-area:  2 / 2 / 3 / 3;
+}

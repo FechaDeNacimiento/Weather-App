@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(145,190,225);
+    background: linear-gradient(177deg, rgba(145,190,225,1) 0%, rgba(72,163,217,1) 100%);
+}
+
+#Top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
