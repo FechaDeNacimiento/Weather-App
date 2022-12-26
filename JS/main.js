@@ -15,4 +15,4 @@ window.addEventListener('load', async ()=>{
     console.log(App.LocalResponse)
     top.City.textContent = App.LocalResponse.name
   }, 300)
-})
+});
