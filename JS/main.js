@@ -15,8 +15,25 @@ window.addEventListener("load", async () => {
   setWeather(App);
 });
 
+const showInputButton = top.City;
+const inputText = document.getElementById("city-input");
+
+showInputButton.addEventListener("click", () => {
+  if (inputText.style.display === "none") {
+    inputText.style.display = "block";
+
+    inputText.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        App.getWeather(inputText.value);
+        setWeather(App);
+        inputText.value = "";
+        inputText.style.display = "none";
+      }
+    });
+  }
+});
+
 function setWeather(response) {
-  
   setTimeout(() => {
     //Make use of App.cityResponse here
     top.City.textContent = response.cityResponse.name;
@@ -30,21 +47,3 @@ function setWeather(response) {
       Math.round(response.cityResponse.main.temp_min - 273.15) + "°C";
   }, 2000);
 }
-
-const showInputButton = top.City;
-const inputText = document.getElementById("city-input");
-
-showInputButton.addEventListener("click", () => {
-  if (inputText.style.display === "none") {
-    inputText.style.display = "block";
-
-    inputText.addEventListener("keydown", function (event) {
-      if (event.key === "Enter") {
-        App.getWeather(inputText.value);
-        setWeather(App);
-        inputText.style.display = "none";
-        inputText.value = ""
-      }
-    });
-  }
-});
