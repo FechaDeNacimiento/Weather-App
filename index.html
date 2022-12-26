@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
-    <script type="module" src="JS/main.js" defer></script>
-    <!-- <script type="module" src="JS/App.js"></script>  -->
-    <script type="module" src="JS/Services/API/Weather.js"></script>
-    <!-- <script type="module" src="JS/Services/GeoLocation/GeoLocation.js"></script> -->
-</head>
-<body>
+    <link rel="stylesheet" href="./src/UI/css/App.css" />
+    <link rel="stylesheet" href="./src/UI/css/Top.css" />
+    <link rel="stylesheet" href="./src/UI/css/Mid.css" />
+    <script type="module" src="./src/main.js" defer></script>
+  </head>
 
+  <body>
     <div id="container">
-        <form id="form">
-            <input type="text" name="weather" id="weather" placeholder="Search">
-            <button type="button" id="submit-btn">
-                submit
-            </button>
-        </form>
+      <header id="Top">
+        <i id="menu-icon">
+          <img src="./src/UI/icons/icons8-menu-25.png" alt="" />
+        </i>
 
-        <div id="Data">
+        <h1 id="city"></h1>
 
+        <i id="plus-icon">
+          <img src="./src/UI/icons/icons8-plus-math-25.png" alt="" />
+        </i>
+      </header>
+
+      <div id="time">
+        <p id="Time">sat, 1:40 pm</p>
+      </div>
+
+      <main id="Mid">
+        <div id="status">
+          <i id="weather-icon">
+            <img src="src/UI/icons/icons8-sun-25.png" alt="" />
+            <p id="status"></p>
+          </i>
         </div>
-    </div>
-    
 
-    
-</body>
+        <div id="temp">
+          <p id="temperature"></p>
+        </div>
+
+        <div id="min-max-temp">
+          <p id="min-temp"></p>
+
+          <p id="max-temp"></p>
+        </div>
+      </main>
+
+      <footer id="Bottom"></footer>
+    </div>
+  </body>
 </html>
