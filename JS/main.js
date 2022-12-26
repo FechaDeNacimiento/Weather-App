@@ -14,5 +14,5 @@ window.addEventListener('load', async ()=>{
     //Make use of App.LocalResponse here
     console.log(App.LocalResponse)
     top.City.textContent = App.LocalResponse.name
-  }, 300)
+  }, 1000)
 });
