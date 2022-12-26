@@ -1,0 +1,29 @@
+#top{
+    display: flex;
+
+}
+
+#top-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Top-time{
+    margin-top: -35px;
+    text-align: center;
+}
+
+#menu-icon, #plus-icon{
+    width: 30px;
+    height: 30px;
+}
+
+#city{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+#time{
+    font-size: 1rem;
+}

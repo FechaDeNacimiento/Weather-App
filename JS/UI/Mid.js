@@ -1,7 +1,7 @@
 const Mid = ()=> {
 
-    const Status = document.getElementById("status");
-    const Temperature = document.getElementById("temperature");
+    const Status = document.getElementById("Status");
+    const Temperature = document.getElementById("Temp");
     const MinTemp = document.getElementById("min-temp");
     const MaxTemp = document.getElementById("max-temp");
 
