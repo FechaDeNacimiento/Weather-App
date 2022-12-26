@@ -1,15 +1,14 @@
 const Top = () => {
 
-  const Header = document.getElementById("Top");
-  const Mid = document.getElementById("Mid");
-  const Bottom = document.getElementById("Bottom");
-
+  const Top = document.getElementById("Top");
   const City = document.getElementById("city");
+  const menuIcon = document.getElementById("menu-icon");
+  const plusIcon = document.getElementById("plus-icon");
 
   return {
-    Header,
-    Mid,
-    Bottom,
+    Top,
+    menuIcon,
+    plusIcon,
     City
   };
 };

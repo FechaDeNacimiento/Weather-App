@@ -1,0 +1,14 @@
+@font-face {
+    font-family: RobotoThin;
+    src: url(Roboto-Thin.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(145,190,225);
+    background: linear-gradient(to right, rgba(145,190,225,1) 0%, rgba(72,163,217,1) 100%); 
+    color: white;    
+    font-family: RobotoThin;
+}
