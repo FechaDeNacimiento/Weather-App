@@ -1,6 +1,10 @@
 #top{
     display: flex;
+    position: fixed;
+}
 
+#top-main, #Top-time{
+    flex: 0 0 auto;
 }
 
 #top-main{
@@ -26,4 +30,12 @@
 
 #time{
     font-size: 1rem;
+}
+/* use the min-max properties in the grid container so it knows whenn to stop shrinking in the case of flexbox the flex-shrink property is used to define at what size the flex container should stop shrinking */
+#city-input{
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    color: rgba(155, 155, 155, 0.9);
 }
